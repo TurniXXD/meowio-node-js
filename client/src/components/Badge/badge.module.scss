@@ -1,0 +1,56 @@
+@use '../../styles/variables' as *;
+
+.badge {
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+  color: $white;
+  margin-bottom: 0 !important;
+  span {
+    font-size: 12px;
+  }
+}
+
+.badge:hover {
+  cursor: pointer;
+}
+
+.withIcon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.primary {
+  border: 1px solid $blue;
+}
+
+.secondary {
+  border: 2px solid $gray;
+  color: $gray;
+}
+
+.success {
+  background-color: $success;
+}
+
+.danger {
+  background-color: $danger;
+}
+
+.warning {
+  background-color: $warning;
+  color: $text;
+}
+
+.info {
+  background-color: $info;
+}
+
+.light {
+  background-color: $bg;
+  color: $text;
+}
+
+.dark {
+  background-color: $bgDark;
+}

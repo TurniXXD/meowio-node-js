@@ -1,0 +1,11 @@
+@use '../../styles/variables' as *;
+
+.textField {
+  border: 1px solid $lightGray;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none
+}

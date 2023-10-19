@@ -1,0 +1,57 @@
+$white: #ffffff;
+$gray: #6c757d;
+$lightGray: #dfdfdf;
+$blue: #007bff;
+$danger: #dc3545;
+$success: #28a745;
+$warning: #ffc107;
+$info: #17a2b8;
+
+$bg: $white;
+$bgGray: #f8f9fa;
+$bgDark: #343a40;
+$bgSuccess: #d4edda;
+$bgError: #f8d7da;
+$text: #212529;
+$textSecondary: $gray;
+
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1506px;
+
+@mixin screen-sm {
+  @media (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin screen-md {
+  @media (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin screen-lg {
+  @media (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin screen-xl {
+  @media (min-width: $xl) {
+    @content;
+  }
+}
+
+@mixin screen-xxl {
+  @media (min-width: $xxl) {
+    @content;
+  }
+}
+
+@mixin subTitle {
+  font-size: 24px;
+  line-height: 28px;
+}

@@ -1,0 +1,25 @@
+@use '../../styles/variables' as *;
+
+.articleDetail {
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 50rem;
+    }
+  }
+
+  .info {
+    margin: 1rem 0;
+  }
+
+  .content * {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "relatedArticles": "Related articles",
+  "readWholeArticle": "Read whole article",
+  "commentsCount": "{{comments}} comments",
+  "comments": {
+    "title": "Comments",
+    "NewCommentPlaceholder": "Join the discussion",
+    "hourAgo": "1 hour ago",
+    "hoursAgo": "{{hours}} hours ago",
+    "yesterday": "Yesterday",
+    "daysAgo": "{{days}} days ago",
+    "weeksAgo": "{{weeks}} weeks ago",
+    "monthsAgo": "{{months}} months ago",
+    "yearsAgo": "{{years}} years ago",
+    "upvote": "Upvote",
+    "downvote": "Downvote"
+  },
+  "myArticles": {
+    "title": "My Articles",
+    "commentsCount": "# of comments",
+    "author": "Author",
+    "actions": "Actions"
+  },
+  "createNewArticleTitle": "Create new article",
+  "publishArticle": "Publish Article",
+  "articleTitle": "Article Title",
+  "editArticle": "Edit article",
+  "content": "Content",
+  "perex": "Perex",
+  "placeholders": {
+    "title": "My First Article",
+    "perex": "Cats are cool, find your favorite one!",
+    "content": "Supports markdown. Yay!"
+  },
+  "validations": {
+    "titleRequired": "Title is required",
+    "perexRequired": "Perex is required",
+    "contentRequired": "Content is required"
+  }
+}

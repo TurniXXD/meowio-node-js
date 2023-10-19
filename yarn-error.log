@@ -1,0 +1,55 @@
+Arguments: 
+  /home/turnix/.nvm/versions/node/v16.15.1/bin/node /usr/bin/yarn add graphql-playground-koa
+
+PATH: 
+  /home/turnix/.local/share/pnpm:/home/turnix/.nvm/versions/node/v16.15.1/bin:/Users/joeldenning/pnpm:/home/turnix/.local/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/turnix/go/bin:/home/turnix/.cargo/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.15.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/graphql-playground-koa: Not found
+      at Request.params.callback [as _callback] (/usr/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at Request.self.callback (/usr/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:527:28)
+      at IncomingMessage.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:641:28)
+      at IncomingMessage.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "meowio",
+    "version": "1.0.0",
+    "description": "Blogging showcase project",
+    "author": "turnix",
+    "main": "index.js",
+    "scripts": {
+      "build": "turbo run build",
+      "start": "turbo start --parallel",
+      "lint": "turbo run lint",
+      "test": ""
+    },
+    "keywords": [],
+    "license": "ISC",
+    "devDependencies": {
+      "prettier": "^2.8.8",
+      "turbo": "^1.10.9",
+      "typescript": "^5.1.6"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

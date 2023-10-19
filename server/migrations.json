@@ -1,0 +1,5 @@
+{
+  "database-url-var": "MIGRATIONS_DB_URL",
+  "ignore-pattern": ".*\\.map",
+  "migrations-dir": "./dist/migrations"
+}

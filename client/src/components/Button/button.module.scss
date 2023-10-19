@@ -1,0 +1,57 @@
+@use '../../styles/variables' as *;
+
+.primary {
+  background-color: $blue;
+}
+
+.upload {
+  background-color: $gray;
+}
+
+.selectedFileText {
+  color: $gray;
+  font-size: 14px;
+  padding: 0.75rem 0;
+}
+
+.textOnlyButton {
+  background-color: transparent;
+  border: none;
+  color: $text !important;
+}
+
+.badgeWrapper {
+  display: block;
+}
+
+.buttonContainer {
+  .fileInputWrapper {
+    margin-bottom: 1rem !important;
+    position: relative;
+    display: block;
+    input[type='file'] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 153px;
+      height: 38px;
+      display: block;
+      opacity: 0;
+      cursor: pointer;
+      z-index: 2;
+    }
+  }
+
+  button {
+    color: $white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    z-index: 1;
+    border-radius: 5px;
+    outline: none;
+  }
+}

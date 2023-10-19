@@ -1,0 +1,61 @@
+enum Role {
+  user
+  admin
+}
+
+enum TranslatableErrors {
+  user_does_not_exist
+  wrong_password
+}
+
+input LoginInput {
+  email: String!
+  password: String!
+}
+
+input ArticleInput {
+  articleId: ID!
+}
+
+type ErrorBody {
+  message: String
+  translatable: TranslatableErrors
+}
+
+type ErrorResponse {
+  error: ErrorBody!
+}
+
+type User {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  email: String!
+  role: Role!
+}
+
+type Article {
+  id: ID!
+  imageUrl: String!
+  title: String!
+  perex: String!
+  content: String!
+}
+
+type Articles {
+  articles: [Article]!
+}
+
+union UserResponse = User | ErrorResponse
+union ArticlesResponse = Articles | ErrorResponse
+union ArticleResponse = Article | ErrorResponse
+
+type Query {
+  article(input: ArticleInput!): ArticleResponse!
+  articles: ArticlesResponse!
+}
+
+type Mutation {
+  login(input: LoginInput!): UserResponse!
+  logout: UserResponse!
+}

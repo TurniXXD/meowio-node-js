@@ -1,0 +1,15 @@
+overwrite: true
+schema: ./src/schema/root.graphql
+documents: null
+
+generates:
+  ./src/generated/graphql.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-resolvers
+    schema: ./src/schema/root.graphql
+
+hooks:
+  afterAllFileWrite:
+    - prettier --write

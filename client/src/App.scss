@@ -1,0 +1,28 @@
+@use 'styles/variables' as *;
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $text;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h1,h2,h3,h4 {
+  font-weight: 500;
+}

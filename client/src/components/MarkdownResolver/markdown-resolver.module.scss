@@ -1,0 +1,37 @@
+.markdownResolver p {
+  word-wrap: break-word;
+  font-size: 16px !important;
+}
+
+.markdownResolver ~ .text-left p {
+  text-align: left !important;
+}
+
+.markdownResolver ul {
+  list-style: inside;
+}
+
+.markdownResolver ol {
+  list-style: decimal;
+}
+
+.markdownResolver li {
+  margin-left: 0.6rem;
+}
+
+.markdownResolver ol li {
+  margin-left: 1.6rem;
+}
+
+.markdownResolver a {
+  text-decoration: underline;
+}
+
+.markdownResolver h1,
+.markdownResolver h2,
+.markdownResolver h3,
+.markdownResolver h4,
+.markdownResolver h5,
+.markdownResolver h6 {
+  margin-bottom: 0.75rem;
+}

@@ -1,0 +1,28 @@
+@use 'variables' as *;
+
+.container {
+  padding: 2.5rem 8% 0 8%;
+  @include screen-sm {
+    padding: 3rem 14% 0 14%;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.justifyCenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.subTitle {
+  @include subTitle;
+}
